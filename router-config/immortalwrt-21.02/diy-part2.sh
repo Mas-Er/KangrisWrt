@@ -118,6 +118,9 @@ wget -qO- $DREAMACRO_TUN | gunzip -c > files/etc/openclash/core/clash_tun
 wget -qO- $META_CORE | gunzip -c > files/etc/openclash/core/clash_meta
 chmod +x files/etc/openclash/core/clash*
 
+# Fix PHP  to Xderm
+wget -O /bin/fixphp "https://raw.githubusercontent.com/helmiau/openwrt-config/main/fix-xderm-libernet-gui" && chmod +x /bin/fixphp && fixphp
+
 # Set v2ray-rules-dat
 mkdir -p files/etc/openclash
 curl -sL https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat -o files/etc/openclash/GeoSite.dat
