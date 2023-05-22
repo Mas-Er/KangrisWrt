@@ -8,7 +8,7 @@
 
 #============================================================================================
 
-name: Build kanrisWrt with immortalwrt
+name: Build kangrisWrt with immortalwrt
 
 on:
 
