@@ -70,11 +70,11 @@ env:
   CONFIG_FILE: router-config/immortalwrt-21.02/config
   DIY_P1_SH: router-config/immortalwrt-21.02/diy-part1.sh
   DIY_P2_SH: router-config/immortalwrt-21.02/diy-part2.sh
-  TZ: Asia/Jakarta
+  TZ: America/New_York
 
 jobs:
   build:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-22.04
     if: ${{ github.event.repository.owner.id }} == ${{ github.event.sender.id }}
 
     steps:
